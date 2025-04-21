@@ -17,7 +17,7 @@ $(function(){
 const mySwiper = new Swiper('.swiper', {
   // Optional parameters
 
-   slidesPerView: 2.4,
+   slidesPerView: 2.2,
    
    breakpoints: {
     // スライドの表示枚数：500px以上の場合

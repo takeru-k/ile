@@ -584,7 +584,7 @@ margin: 0 auto;
 }
 
 .c-card__title{
-  font-size: clamp(19.94px, 0.374vw + 18.744px, 25.92px);
+  font-size: clamp(18px, 0.225vw + 17.280px, 21.6px);
   margin-top: 16px;
    font-family: var(--title-font);
    font-weight: normal;
