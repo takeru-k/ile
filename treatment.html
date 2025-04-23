@@ -12,28 +12,17 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="l-header js-header">
-      <div class="l-header__inner">
-        <p class="l-header__logo">
+      <div class="l-header__wrap">
+        <div class="l-header__logo">
           <a href="index.html">
-            <img
-              src="images/header/logo.png"
-              alt=""
-              aria-label="トップに戻る"
-            />
+            <img src="images/header/logo.png" alt="" />
           </a>
-        </p>
+        </div>
         <!-- /.l-header__logo -->
 
         <nav class="l-header__nav">
@@ -43,12 +32,11 @@
             <li><a href="staff.html">スタッフ紹介</a></li>
             <li><a href="store.html">店舗のご案内</a></li>
             <li><a href="concept.html">コンセプト</a></li>
-            <li><a href="menu.html">メニュー・料金</a></li>
+
             <li><a href="">採用情報</a></li>
           </ul>
           <!-- /.l-header__menu -->
         </nav>
-
         <button
           type="button"
           class="c-hamburger js-btn"
@@ -58,7 +46,7 @@
           ><!-- /.c-hamburger__line --></button
         ><!-- /.c-hamburger -->
       </div>
-      <!-- /.l-header__inner -->
+      <!-- /.l-header__wrap -->
     </header>
     <!-- /.l-header -->
 
@@ -73,17 +61,16 @@
     </div>
     <!-- /.l-page-header -->
 
-    <div class="p-top-treatment">
+    <div class="l-block">
       <div class="l-inner">
         <div class="l-grid">
-          <div class="p-top-treatment__image">
+          <div class="l-grid__content1">
             <img src="images/sample.jpg" alt="" />
           </div>
-          <!-- /.p-top-treatment__image -->
-          <div class="p-top-treatment__texts">
+          <!-- /.l-grid__content1 -->
+
+          <div class="l-grid__content2">
             <div class="c-heading">
-              <span class="c-heading__en">treatment</span
-              ><!-- /.c-heading__en -->
               <h2 class="c-heading__title">
                 髪の「理想」と「お悩み」を丁寧に伺います
               </h2>
@@ -105,19 +92,18 @@
             </div>
             <!-- /.c-textarea -->
           </div>
-          <!-- /.p-top-treatment__texts -->
+          <!-- /.l-grid__content2 -->
         </div>
         <!-- /.l-grid -->
 
-        <div class="l-grid l-grid__reverse">
-          <div class="p-top-treatment__image">
+        <div class="l-grid u-space l-grid--reverse">
+          <div class="l-grid__content1">
             <img src="images/sample.jpg" alt="" />
           </div>
-          <!-- /.p-top-treatment__image -->
-          <div class="p-top-treatment__texts">
+          <!-- /.l-grid__content1 -->
+
+          <div class="l-grid__content2">
             <div class="c-heading">
-              <span class="c-heading__en">treatment</span
-              ><!-- /.c-heading__en -->
               <h2 class="c-heading__title">
                 髪への負担を最小限に抑えた、丁寧な施術
               </h2>
@@ -126,7 +112,6 @@
             <!-- /.c-heading -->
 
             <div class="c-textarea">
-              <p>髪質改善は、状態の見極めがすべての鍵です。</p>
               <p>
                 髪の個性を活かしながら、不要なダメージを最小限に抑える施術を心がけています。
               </p>
@@ -139,28 +124,26 @@
             </div>
             <!-- /.c-textarea -->
           </div>
-          <!-- /.p-top-treatment__texts -->
+          <!-- /.l-grid__content2 -->
         </div>
         <!-- /.l-grid -->
 
-        <div class="l-grid">
-          <div class="p-top-treatment__image">
+        <div class="l-grid u-space">
+          <div class="l-grid__content1">
             <img src="images/sample.jpg" alt="" />
           </div>
-          <!-- /.p-top-treatment__image -->
-          <div class="p-top-treatment__texts">
+          <!-- /.l-grid__content1 -->
+
+          <div class="l-grid__content2">
             <div class="c-heading">
-              <span class="c-heading__en">treatment</span
-              ><!-- /.c-heading__en -->
               <h2 class="c-heading__title">
-                髪の「理想」と「お悩み」を丁寧に伺います
+                内部補修と外部保護で、<br />芯からうるおう髪へ
               </h2>
               <!-- /.c-heading__title -->
             </div>
             <!-- /.c-heading -->
 
             <div class="c-textarea">
-              <p>内部補修と外部保護で、芯からうるおう髪へ</p>
               <p>
                 使用するのは、サロン専用の「インカラミトリートメント」。高濃度アミノ酸系補修成分を含んだトリートメントで、
                 髪内部のタンパク質結合を補修します。
@@ -175,15 +158,15 @@
             </div>
             <!-- /.c-textarea -->
           </div>
-          <!-- /.p-top-treatment__texts -->
+          <!-- /.l-grid__content2 -->
         </div>
         <!-- /.l-grid -->
       </div>
       <!-- /.l-inner -->
     </div>
-    <!-- /.p-top-treatment -->
+    <!-- /.l-block -->
 
-    <div class="p-salons">
+    <div class="l-block l-block--background">
       <div class="l-inner">
         <div class="c-heading">
           <span class="c-heading__en">salons</span
@@ -192,10 +175,11 @@
           <!-- /.c-heading__title -->
         </div>
         <!-- /.c-heading -->
-        <div class="p-salones__wrap c-cards">
-          <div class="p-salons__item c-card">
+
+        <div class="c-cards">
+          <div class="c-card">
             <div class="c-card__image">
-              <img src="images/sample-store.webp" alt="" />
+              <img src="images/top/salon2.webp" alt="" />
             </div>
             <!-- /.c-card__image -->
 
@@ -204,64 +188,237 @@
             <p class="c-card__address">花巻市諏訪町2丁目2-1</p>
 
             <div class="c-card__links">
-              <a href="" class="c-card__link c-card__link--store"
+              <a
+                href="store.html#hanamaki"
+                class="c-card__link c-card__link--store"
                 >店舗情報を見る</a
               ><!-- /.c-card__link -->
-              <a href="" class="c-card__link c-card__link--reserve">
+              <a
+                href="https://iledespins.pos-s.net/reserve/"
+                class="c-card__link c-card__link--reserve"
+              >
                 web予約する</a
               ><!-- /.c-card__link -->
             </div>
             <!-- /.c-card__links -->
           </div>
-          <!-- /.p-salons__item -->
-          <div class="p-salons__item c-card">
+          <!-- /.c-card -->
+
+          <div class="c-card">
             <div class="c-card__image">
-              <img src="images/sample-store.webp" alt="" />
+              <img src="images/top/salon2.webp" alt="" />
             </div>
             <!-- /.c-card__image -->
 
-            <h3 class="c-card__title">イルデパン 花巻店</h3>
+            <h3 class="c-card__title">イルデパン 北上店</h3>
             <!-- /.c-card__title -->
-            <p class="c-card__address">花巻市諏訪町2丁目2-1</p>
+            <p class="c-card__address">北上市北鬼柳19地割40-5</p>
 
             <div class="c-card__links">
-              <a href="" class="c-card__link c-card__link--store"
+              <a
+                href="store.html#hanamaki"
+                class="c-card__link c-card__link--store"
                 >店舗情報を見る</a
               ><!-- /.c-card__link -->
-              <a href="" class="c-card__link c-card__link--reserve">
+              <a
+                href="https://iledespins.pos-s.net/reserve/"
+                class="c-card__link c-card__link--reserve"
+              >
                 web予約する</a
               ><!-- /.c-card__link -->
             </div>
             <!-- /.c-card__links -->
           </div>
-          <!-- /.p-salons__item -->
-          <div class="p-salons__item c-card">
+          <!-- /.c-card -->
+
+          <div class="c-card">
             <div class="c-card__image">
-              <img src="images/sample-store.webp" alt="" />
+              <img src="images/top/salon2.webp" alt="" />
             </div>
             <!-- /.c-card__image -->
 
-            <h3 class="c-card__title">イルデパン 花巻店</h3>
+            <h3 class="c-card__title">アキ美容室</h3>
             <!-- /.c-card__title -->
-            <p class="c-card__address">花巻市諏訪町2丁目2-1</p>
+            <p class="c-card__address">花巻市北笹間13地割1</p>
 
             <div class="c-card__links">
-              <a href="" class="c-card__link c-card__link--store"
+              <a
+                href="store.html#hanamaki"
+                class="c-card__link c-card__link--store"
                 >店舗情報を見る</a
               ><!-- /.c-card__link -->
-              <a href="" class="c-card__link c-card__link--reserve">
+              <a
+                href="https://iledespins.pos-s.net/reserve/"
+                class="c-card__link c-card__link--reserve"
+              >
                 web予約する</a
               ><!-- /.c-card__link -->
             </div>
             <!-- /.c-card__links -->
           </div>
-          <!-- /.p-salons__item -->
+          <!-- /.c-card -->
         </div>
-        <!-- /.p-salones__wrap -->
+        <!-- /.c-cards -->
       </div>
       <!-- /.l-inner -->
     </div>
-    <!-- /.p-salons -->
+    <!-- /.l-block l-block--backgroud -->
+
+    <div class="l-block">
+      <div class="l-inner">
+        <div class="c-heading">
+          <span class="c-heading__en">staff</span
+          ><!-- /.c-heading__en -->
+          <h2 class="c-heading__title">スタッフのご紹介</h2>
+          <!-- /.c-heading__title -->
+        </div>
+        <!-- /.c-heading -->
+
+        <div class="swiper">
+          <div class="p-staff swiper-wrapper">
+            <div class="p-staff__item swiper-slide">
+              <div class="p-staff__imgage">
+                <img src="images/slideshow/stylist.jpg" alt="" />
+              </div>
+              <!-- /.p-staff__imgage -->
+
+              <div class="p-staff__desc">
+                <p class="p-staff__store">イルデパン 花巻店</p>
+                <!-- /.p-staff__store -->
+                <p class="p-staff__position">スタイリスト</p>
+                <!-- /.p-staff__position -->
+                <p class="p-staff__name">名字 名前</p>
+                <!-- /.p-staff__name -->
+
+                <div class="p-staff__profile">
+                  <a href="single.html" class="p-staff__link">プロフィール</a
+                  ><!-- /.p-staff__link -->
+                </div>
+                <!-- /.p-staff__profile -->
+              </div>
+              <!-- /.p-staff__desc -->
+            </div>
+            <!-- /.p-staff__item -->
+            <div class="p-staff__item swiper-slide">
+              <div class="p-staff__imgage">
+                <img src="images/slideshow/stylist.jpg" alt="" />
+              </div>
+              <!-- /.p-staff__imgage -->
+
+              <div class="p-staff__desc">
+                <p class="p-staff__store">イルデパン 花巻店</p>
+                <!-- /.p-staff__store -->
+                <p class="p-staff__position">スタイリスト</p>
+                <!-- /.p-staff__position -->
+                <p class="p-staff__name">名字 名前</p>
+                <!-- /.p-staff__name -->
+
+                <div class="p-staff__profile">
+                  <a href="single.html" class="p-staff__link"
+                    >スタッフ情報を見る</a
+                  ><!-- /.p-staff__link -->
+                </div>
+                <!-- /.p-staff__profile -->
+              </div>
+              <!-- /.p-staff__desc -->
+            </div>
+            <!-- /.p-staff__item -->
+            <div class="p-staff__item swiper-slide">
+              <div class="p-staff__imgage">
+                <img src="images/slideshow/stylist.jpg" alt="" />
+              </div>
+              <!-- /.p-staff__imgage -->
+
+              <div class="p-staff__desc">
+                <p class="p-staff__store">イルデパン 花巻店</p>
+                <!-- /.p-staff__store -->
+                <p class="p-staff__position">スタイリスト</p>
+                <!-- /.p-staff__position -->
+                <p class="p-staff__name">名字 名前</p>
+                <!-- /.p-staff__name -->
+
+                <div class="p-staff__profile">
+                  <a href="single.html" class="p-staff__link"
+                    >スタッフ情報を見る</a
+                  ><!-- /.p-staff__link -->
+                </div>
+                <!-- /.p-staff__profile -->
+              </div>
+              <!-- /.p-staff__desc -->
+            </div>
+            <!-- /.p-staff__item -->
+            <div class="p-staff__item swiper-slide">
+              <div class="p-staff__imgage">
+                <img src="images/slideshow/stylist.jpg" alt="" />
+              </div>
+              <!-- /.p-staff__imgage -->
+
+              <div class="p-staff__desc">
+                <p class="p-staff__store">イルデパン 花巻店</p>
+                <!-- /.p-staff__store -->
+                <p class="p-staff__position">スタイリスト</p>
+                <!-- /.p-staff__position -->
+                <p class="p-staff__name">名字 名前</p>
+                <!-- /.p-staff__name -->
+
+                <div class="p-staff__profile">
+                  <a href="single.html" class="p-staff__link"
+                    >スタッフ情報を見る</a
+                  ><!-- /.p-staff__link -->
+                </div>
+                <!-- /.p-staff__profile -->
+              </div>
+              <!-- /.p-staff__desc -->
+            </div>
+            <!-- /.p-staff__item -->
+            <div class="p-staff__item swiper-slide">
+              <div class="p-staff__imgage">
+                <img src="images/slideshow/stylist.jpg" alt="" />
+              </div>
+              <!-- /.p-staff__imgage -->
+
+              <div class="p-staff__desc">
+                <p class="p-staff__store">イルデパン 花巻店</p>
+                <!-- /.p-staff__store -->
+                <p class="p-staff__position">スタイリスト</p>
+                <!-- /.p-staff__position -->
+                <p class="p-staff__name">名字 名前</p>
+                <!-- /.p-staff__name -->
+
+                <div class="p-staff__profile">
+                  <a href="single.html" class="p-staff__link"
+                    >スタッフ情報を見る</a
+                  ><!-- /.p-staff__link -->
+                </div>
+                <!-- /.p-staff__profile -->
+              </div>
+              <!-- /.p-staff__desc -->
+            </div>
+            <!-- /.p-staff__item -->
+          </div>
+          <!-- /.p-staff__items -->
+        </div>
+        <!-- /.swiper -->
+
+        <!-- ページネーション -->
+        <div class="swiper-pagination"></div>
+        <!-- 前後の矢印 -->
+
+        <div class="swiper-btn">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- /.swiper-btn -->
+
+        <div class="c-button c-button--left">
+          <a href="staff.html" class="c-button__link">スタッフ一覧を見る</a
+          ><!-- /.c-button__link -->
+        </div>
+        <!-- /.c-button -->
+      </div>
+      <!-- /.l-inner -->
+    </div>
+    <!-- /.l-block -->
 
     <div class="l-footer">
       <div class="l-inner">
@@ -276,19 +433,14 @@
           </div>
           <!-- /.l-footer__heading -->
 
-          <div class="c-button">
-            <a href="" class="p-staff__link l-footer__recruit">採用情報を見る</a
-            ><!-- /.c-button__link -->
+          <div class="l-footer__recruit">
+            <a href="">採用情報を見る</a>
           </div>
-          <!-- /.c-button -->
+          <!-- /.l-footer__recruit -->
         </div>
         <!-- /.l-footer__wrap -->
 
-        <small class="l-footer__copy">
-          &copy;ILE DES PINES /
-          <a href="https://knowledge-service.net">Knowledge Service</a
-          ><!-- /.l-footer__copy -->
-        </small>
+        <small class="l-footer__copy"> &copy;ILE DES PINES </small>
       </div>
       <!-- /.l-inner -->
     </div>

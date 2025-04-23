@@ -12,28 +12,17 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="l-header js-header">
-      <div class="l-header__inner">
-        <p class="l-header__logo">
+      <div class="l-header__wrap">
+        <div class="l-header__logo">
           <a href="index.html">
-            <img
-              src="images/header/logo.png"
-              alt=""
-              aria-label="トップに戻る"
-            />
+            <img src="images/header/logo.png" alt="" />
           </a>
-        </p>
+        </div>
         <!-- /.l-header__logo -->
 
         <nav class="l-header__nav">
@@ -43,12 +32,11 @@
             <li><a href="staff.html">スタッフ紹介</a></li>
             <li><a href="store.html">店舗のご案内</a></li>
             <li><a href="concept.html">コンセプト</a></li>
-            <li><a href="menu.html">メニュー・料金</a></li>
+
             <li><a href="">採用情報</a></li>
           </ul>
           <!-- /.l-header__menu -->
         </nav>
-
         <button
           type="button"
           class="c-hamburger js-btn"
@@ -58,7 +46,7 @@
           ><!-- /.c-hamburger__line --></button
         ><!-- /.c-hamburger -->
       </div>
-      <!-- /.l-header__inner -->
+      <!-- /.l-header__wrap -->
     </header>
     <!-- /.l-header -->
 
@@ -73,187 +61,167 @@
     </div>
     <!-- /.l-page-header -->
 
-    <div class="p-store-list">
+    <div class="c-index l-inner">
+      <li>
+        <a href="#hanamaki">イルデパン花巻店</a>
+      </li>
+      <li>
+        <a href="#kitakami">イルデパン北上店</a>
+      </li>
+      <li>
+        <a href="#aki">アキ美容室</a>
+      </li>
+    </div>
+    <!-- /.c-index -->
+
+    <div class="l-block" id="hanamaki">
       <div class="l-inner">
-        <div class="c-index">
-          <li>
-            <a href="#hanamaki">イルデパン花巻店</a>
-          </li>
-          <li>
-            <a href="#kitakami">イルデパン北上店</a>
-          </li>
-          <li>
-            <a href="#aki">アキ美容室</a>
-          </li>
+        <div class="l-grid l-grid--top">
+          <div class="l-grid__content1">
+            <img src="images/sample.jpg" alt="" />
+          </div>
+          <!-- /.l-grid__content1 -->
+
+          <div class="l-grid__content2">
+            <div class="c-table">
+              <dl class="c-table__list">
+                <dt>店名</dt>
+                <dd>イルデパン花巻店</dd>
+                <dt>所在地</dt>
+                <dd>花巻市諏訪町2丁目2</dd>
+                <dt>アクセス</dt>
+                <dd><a href="">Googleマップを開く</a></dd>
+                <dt>営業時間</dt>
+                <dd>10:00 ~ 19:00</dd>
+                <dt>定休日</dt>
+                <dd>なし</dd>
+                <dt>電話番号</dt>
+                <dd><a href="tel:0198-21-9100">0198-21-9100</a></dd>
+                <dt>支払い方法</dt>
+                <dd>現金、クレジットカード、各種電子マネー、PayPay</dd>
+              </dl>
+              <!-- /.c-table__list -->
+            </div>
+            <!-- /.c-table -->
+
+            <div class="c-button">
+              <a
+                href="https://beauty.hotpepper.jp/slnH000228227/"
+                class="c-button__link"
+                >メニュー・料金を見る</a
+              ><!-- /.c-button__link -->
+            </div>
+            <!-- /.c-button -->
+          </div>
+          <!-- /.l-grid__content2 -->
         </div>
-        <!-- /.c-index -->
-
-        <div class="p-store-list__wrap">
-          <div class="p-store-item l-grid" id="hanamaki">
-            <div class="p-store-item__image">
-              <img src="images/sample/salon3.jpg" alt="" />
-            </div>
-            <!-- /.p-store-item__image -->
-
-            <div class="p-store-item__table">
-              <div class="c-table c-table__padding">
-                <table class="c-table__table">
-                  <tbody>
-                    <tr>
-                      <th>店名</th>
-                      <td>イルデパン花巻店</td>
-                    </tr>
-                    <tr>
-                      <th>所在地</th>
-                      <td>花巻市諏訪町2丁目2-1</td>
-                    </tr>
-                    <tr>
-                      <th>アクセス</th>
-                      <td><a href="">Googleマップを開く</a></td>
-                    </tr>
-                    <tr>
-                      <th>営業時間</th>
-                      <td>10:00 ~ 19:00</td>
-                    </tr>
-                    <tr>
-                      <th>定休日</th>
-                      <td>なし</td>
-                    </tr>
-                    <tr>
-                      <th>電話番号</th>
-                      <td><a href=""></a>0198-21-9100</td>
-                    </tr>
-                    <tr>
-                      <th>支払い方法</th>
-                      <td>現金、クレジットカード、各種電子マネー、PayPay</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <!-- /.c-table__table -->
-              </div>
-              <!-- /.c-table -->
-
-              <div class="c-box-button u-mt40">
-                <a href="" class="c-box-button__link">メニュー・料金を見る</a
-                ><!-- /.c-box-button__link -->
-              </div>
-              <!-- /.c-box-button -->
-            </div>
-            <!-- /.p-store-item__table -->
-          </div>
-          <!-- /.p-store-item -->
-          <div class="p-store-item l-grid" id="kitakami">
-            <div class="p-store-item__image">
-              <img src="images/sample/salon3.jpg" alt="" />
-            </div>
-            <!-- /.p-store-item__image -->
-
-            <div class="p-store-item__table">
-              <div class="c-table c-table__padding">
-                <table class="c-table__table">
-                  <tbody>
-                    <tr>
-                      <th>店名</th>
-                      <td>イルデパン花巻店</td>
-                    </tr>
-                    <tr>
-                      <th>所在地</th>
-                      <td>花巻市諏訪町2丁目2-1</td>
-                    </tr>
-                    <tr>
-                      <th>アクセス</th>
-                      <td><a href="">Googleマップを開く</a></td>
-                    </tr>
-                    <tr>
-                      <th>営業時間</th>
-                      <td>10:00 ~ 19:00</td>
-                    </tr>
-                    <tr>
-                      <th>定休日</th>
-                      <td>なし</td>
-                    </tr>
-                    <tr>
-                      <th>電話番号</th>
-                      <td><a href=""></a>0198-21-9100</td>
-                    </tr>
-                    <tr>
-                      <th>支払い方法</th>
-                      <td>現金、クレジットカード、各種電子マネー、PayPay</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <!-- /.c-table__table -->
-              </div>
-              <!-- /.c-table -->
-
-              <div class="c-box-button u-mt40">
-                <a href="" class="c-box-button__link">メニュー・料金を見る</a
-                ><!-- /.c-box-button__link -->
-              </div>
-              <!-- /.c-box-button -->
-            </div>
-            <!-- /.p-store-item__table -->
-          </div>
-          <!-- /.p-store-item -->
-          <div class="p-store-item l-grid" id="aki">
-            <div class="p-store-item__image">
-              <img src="images/sample/salon3.jpg" alt="" />
-            </div>
-            <!-- /.p-store-item__image -->
-
-            <div class="p-store-item__table">
-              <div class="c-table c-table__padding">
-                <table class="c-table__table">
-                  <tbody>
-                    <tr>
-                      <th>店名</th>
-                      <td>イルデパン花巻店</td>
-                    </tr>
-                    <tr>
-                      <th>所在地</th>
-                      <td>花巻市諏訪町2丁目2-1</td>
-                    </tr>
-                    <tr>
-                      <th>アクセス</th>
-                      <td><a href="">Googleマップを開く</a></td>
-                    </tr>
-                    <tr>
-                      <th>営業時間</th>
-                      <td>10:00 ~ 19:00</td>
-                    </tr>
-                    <tr>
-                      <th>定休日</th>
-                      <td>なし</td>
-                    </tr>
-                    <tr>
-                      <th>電話番号</th>
-                      <td><a href=""></a>0198-21-9100</td>
-                    </tr>
-                    <tr>
-                      <th>支払い方法</th>
-                      <td>現金、クレジットカード、各種電子マネー、PayPay</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <!-- /.c-table__table -->
-              </div>
-              <!-- /.c-table -->
-
-              <div class="c-box-button u-mt40">
-                <a href="" class="c-box-button__link">メニュー・料金を見る</a
-                ><!-- /.c-box-button__link -->
-              </div>
-              <!-- /.c-box-button -->
-            </div>
-            <!-- /.p-store-item__table -->
-          </div>
-          <!-- /.p-store-item -->
-        </div>
-        <!-- /.p-store-list__wrap -->
+        <!-- /.l-grid -->
       </div>
       <!-- /.l-inner -->
     </div>
-    <!-- /.p-store-list -->
+    <!-- /.l-block -->
+
+    <div class="l-block l-block--background u-space--l" id="kitakami">
+      <div class="l-inner">
+        <div class="l-grid l-grid--top">
+          <div class="l-grid__content1">
+            <img src="images/sample.jpg" alt="" />
+          </div>
+          <!-- /.l-grid__content1 -->
+
+          <div class="l-grid__content2">
+            <div class="c-table">
+              <dl class="c-table__list">
+                <dt>店名</dt>
+                <dd>イルデパン北上店</dd>
+                <dt>所在地</dt>
+                <dd>北上市北鬼柳19地割40-5</dd>
+                <dt>アクセス</dt>
+                <dd>
+                  <a href="https://maps.app.goo.gl/AT153qhqKQT1ydoT8"
+                    >Googleマップを開く</a
+                  >
+                </dd>
+                <dt>営業時間</dt>
+                <dd>平日：10：00～19：00<br />土日祝：10：00～18：00</dd>
+                <dt>定休日</dt>
+                <dd>なし</dd>
+                <dt>電話番号</dt>
+                <dd><a href="tel:0197-72-5839">0197-72-5839</a></dd>
+                <dt>支払い方法</dt>
+                <dd>現金、クレジットカード、各種電子マネー、PayPay</dd>
+              </dl>
+              <!-- /.c-table__list -->
+            </div>
+            <!-- /.c-table -->
+
+            <div class="c-button">
+              <a
+                href="https://beauty.hotpepper.jp/slnH000423395/"
+                class="c-button__link"
+                >メニュー・料金を見る</a
+              ><!-- /.c-button__link -->
+            </div>
+            <!-- /.c-button -->
+          </div>
+          <!-- /.l-grid__content2 -->
+        </div>
+        <!-- /.l-grid -->
+      </div>
+      <!-- /.l-inner -->
+    </div>
+    <!-- /.l-block -->
+
+    <div class="l-block u-space--l" id="aki">
+      <div class="l-inner">
+        <div class="l-grid l-grid--top">
+          <div class="l-grid__content1">
+            <img src="images/sample.jpg" alt="" />
+          </div>
+          <!-- /.l-grid__content1 -->
+
+          <div class="l-grid__content2">
+            <div class="c-table">
+              <dl class="c-table__list">
+                <dt>店名</dt>
+                <dd>アキ美容室</dd>
+                <dt>所在地</dt>
+                <dd>花巻市北笹間13地割1</dd>
+                <dt>アクセス</dt>
+                <dd>
+                  <a href="https://maps.app.goo.gl/TKXnD7tpgPCjEchn7"
+                    >Googleマップを開く</a
+                  >
+                </dd>
+                <dt>営業時間</dt>
+                <dd>9:00～17:00</dd>
+                <dt>定休日</dt>
+                <dd>日曜PM、月曜</dd>
+                <dt>電話番号</dt>
+                <dd><a href="tel:0198-29-2385">0198-29-2385</a></dd>
+                <dt>支払い方法</dt>
+                <dd>現金、クレジットカード、各種電子マネー、PayPay</dd>
+              </dl>
+              <!-- /.c-table__list -->
+            </div>
+            <!-- /.c-table -->
+
+            <div class="c-button">
+              <a
+                href="https://beauty.hotpepper.jp/slnH000529147/"
+                class="c-button__link"
+                >メニュー・料金を見る</a
+              ><!-- /.c-button__link -->
+            </div>
+            <!-- /.c-button -->
+          </div>
+          <!-- /.l-grid__content2 -->
+        </div>
+        <!-- /.l-grid -->
+      </div>
+      <!-- /.l-inner -->
+    </div>
+    <!-- /.l-block -->
 
     <div class="l-footer">
       <div class="l-inner">
@@ -268,19 +236,14 @@
           </div>
           <!-- /.l-footer__heading -->
 
-          <div class="c-button">
-            <a href="" class="p-staff__link l-footer__recruit">採用情報を見る</a
-            ><!-- /.c-button__link -->
+          <div class="l-footer__recruit">
+            <a href="">採用情報を見る</a>
           </div>
-          <!-- /.c-button -->
+          <!-- /.l-footer__recruit -->
         </div>
         <!-- /.l-footer__wrap -->
 
-        <small class="l-footer__copy">
-          &copy;ILE DES PINES /
-          <a href="https://knowledge-service.net">Knowledge Service</a
-          ><!-- /.l-footer__copy -->
-        </small>
+        <small class="l-footer__copy"> &copy;ILE DES PINES </small>
       </div>
       <!-- /.l-inner -->
     </div>
