@@ -984,3 +984,31 @@ justify-content: space-between;
     font-size: 22px;
   }
 }
+
+/*================================
+	splide
+=================================*/
+.splide-thumbnail{
+  margin-top: 8px;
+}
+/* 選択されていないサムネイルは薄くする */
+.splide__slide {
+  opacity: .6;
+}
+/* 選択されているサムネイルだけ透過しない */
+.splide__slide.is-active {
+  opacity: 1;
+}
+/* 画像サイズ調整 */
+.splide__slide img {
+  height: auto;
+  width: 100%;
+}
+
+.splide__track--nav>.splide__list>.splide__slide.is-active {
+    border: none;
+}
+
+.splide__track--nav>.splide__list>.splide__slide{
+  border: 8px solid transparent;
+}
