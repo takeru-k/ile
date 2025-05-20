@@ -49,26 +49,31 @@ const mySwiper = new Swiper('.swiper', {
   },
 });
 
-// splide
+//splide
 document.addEventListener("DOMContentLoaded", function () {
-  // メインスライダー
-  const main = new Splide("#main-carousel", {
-    type: "fade", // フェード
-    rewind: true, // スライダーの終わりまで行ったら先頭に巻き戻す
-    pagination: false, // ページネーション非表示
-    arrows: false, // 矢印非表示
+  initializeSplide("#main-carousel", "#thumbnail-carousel");
+  initializeSplide("#main-carousel-kitakami", "#thumbnail-carousel-kitakami");
+  initializeSplide("#main-carousel-aki", "#thumbnail-carousel-aki");
+});
+
+function initializeSplide(mainSelector, thumbnailSelector) {
+  const main = new Splide(mainSelector, {
+    type: "fade",
+    rewind: true,
+    pagination: false,
+    arrows: false,
   });
-  // サムネイル
-  const thumbnails = new Splide("#thumbnail-carousel", {
-    type: "loop", // ループさせる
-    perPage: 4, // サムネイル3枚表示
-    pagination: false, // ページネーション非表示
-    isNavigation: true, // 他のスライダーのナビゲーションとしてそれぞれのスライドをクリック可能にする
-    focus: "center", // アクティブなスライドを中央にする
-    arrows: false, // 矢印非表示
+
+  const thumbnails = new Splide(thumbnailSelector, {
+    type: "loop",
+    perPage: 4,
+    pagination: false,
+    isNavigation: true,
+    focus: "center",
+    arrows: false,
   });
+
   main.sync(thumbnails);
   main.mount();
   thumbnails.mount();
-});
-
+}
