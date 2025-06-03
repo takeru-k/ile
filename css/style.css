@@ -441,33 +441,50 @@
 }
 
 .p-main-visual__cta {
-  position: absolute;
-  bottom: 24px;
-  left: 0;
+  display: flex;
+  justify-content: space-between;
+  background: #FBFBFB;
+  padding: 16px 16px 0;
+  margin-top: -40px;
+  border-radius: 4px;
+  position: relative;
+  max-width: 600px;
+}
 
+.p-main-visual__cta--title{
+  text-transform: uppercase;
+  font-size: 16px;
+  color: var(--main-color);
+  width: 50%;
+}
+
+.p-main-visual__cta--list{
+  margin-top: 5px;
+  width: 50%;
+}
+
+.p-main-visual__cta--list li{
+  margin-bottom: 20px;
 }
 
 .p-main-visual__cta a{
-  text-transform: uppercase;
   position: relative;
-  padding-bottom: 15px;  
-  display: inline-block;
-  font-feature-settings: "palt";
-  box-sizing: border-box;
-  padding-bottom: 15px;
-  border-bottom: 1px solid rgba(36, 36, 36, 0.2);
-  color: var(--font-color);
+  display:block;
+  padding-right: 32px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .p-main-visual__cta a::before{
   position: absolute;
-  content: '';
-  display: block;
-  bottom: -1px;
-  left: 0;
-  width: 30%;
-  height: 1px;
-  background: var(--font-color);
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../images/icon/arrow.svg) no-repeat center center/contain;
+  right: 0;
+  top: calc(50% - 16px);
+  
 }
 
 .p-main-visual__image{
@@ -493,8 +510,8 @@ margin: 0 auto;
 
   .p-main-visual__cta {
     bottom: 40px;
-    left: -120px;
-    font-size: 20px;
+    right: 0;
+    padding: 40px 24px 20px;
   }
 
 }
